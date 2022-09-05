@@ -15,20 +15,17 @@ public class Main {
         node2.previous = node1;
         node1.previous = node0;
 
-
-
         Node n = node0;
 
-        printFromHead(n);
 
-    }
+        Liste liste = new Liste();
 
-    private static void printFromHead(Node n) {
-        while(n != null){
+        liste.head = node0;
+        liste.tail = node3;
 
-            System.out.println(n.data);
-            n = n.next;
-        }
+        System.out.println(liste.printFromHead());
+        //liste.printFromTail(liste.tail);
+
     }
 
 }
