@@ -72,4 +72,20 @@ public class Liste {
         }
         return stringBuilder.toString().trim();
     }
+
+    public void removeFromHead() {
+
+        if(isEmpty()){
+            return;
+        }
+        if (head == tail){
+            head = null;
+            tail = null;
+            return;
+        }
+
+        head = head.next;
+        head.previous.next = null;
+        head.previous = null;
+    }
 }
