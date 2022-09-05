@@ -4,6 +4,23 @@ public class Liste {
     Node tail = null;
 
 
+    Node insertFromTail(Node node){
+
+        if (isEmpty()) {
+            // er liste tom
+            tail = node;
+            head = node;
+            return tail;
+        }
+
+        // liste er ikke tom
+        tail.next = node;
+        node.previous = tail;
+        tail = node;
+        return tail;
+
+    }
+
     Node insertFromHead(Node node){
 
         if (isEmpty()) {
@@ -38,16 +55,21 @@ public class Liste {
 
             n = n.next;
         }
-
         return stringBuilder.toString().trim();
     }
 
-    void printFromTail(Node n){
-         while (n != null){
+    String printFromTail(){
 
-             System.out.println(n.data);
-             n = n.previous;
+        StringBuilder stringBuilder = new StringBuilder();
 
-         }
+        Node n = tail;
+
+        while(n != null){
+
+            stringBuilder.append(n.data + " ");
+
+            n = n.previous;
+        }
+        return stringBuilder.toString().trim();
     }
 }
