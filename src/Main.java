@@ -35,16 +35,24 @@ public class Main {
 
          */
 
+        /*
         Liste liste = new Liste();
         liste.insertFromTail(new Node("1"));
         liste.insertFromTail(new Node("2"));
         liste.insertFromTail(new Node("3"));
         liste.insertFromTail(new Node("4"));
 
+         */
+/*
+        Liste liste = new Liste("virk nu for helvede de kigger alle sammen");
+
+        liste.insertFromHead("halløj haj");
 
         System.out.println(liste.printFromHead());
 
         System.out.println(liste.printFromTail());
+
+ */
 
     }
 

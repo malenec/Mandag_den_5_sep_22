@@ -3,6 +3,21 @@ public class Liste {
     Node head = null;
     Node tail = null;
 
+    /*
+    public Liste(String s) {
+        String [] strings = s.split(" ");
+
+        for (String string : strings) {
+            insertFromHead(new Node(string));
+            //insertFromHead(string);
+
+        }
+    }
+
+    public Liste() {
+
+    }
+     */
 
     Node insertFromTail(Node node){
 
@@ -35,8 +50,23 @@ public class Liste {
         head.previous = node;
         head = node;
         return head;
-
     }
+
+    /*
+    Node insertFromHead(String s){
+
+        String [] strings = s.split(" ");
+
+        for (String string : strings) {
+            insertFromHead(string);
+        }
+
+        Node node = new Node(s);
+
+        //return insertFromHead(node);
+        return head;
+    }
+     */
 
     boolean isEmpty(){
 
