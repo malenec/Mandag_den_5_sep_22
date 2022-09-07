@@ -43,7 +43,8 @@ public class Main {
         liste.insertFromTail(new Node("4"));
 
          */
-/*
+
+        /*
         Liste liste = new Liste("virk nu for helvede de kigger alle sammen");
 
         liste.insertFromHead("halløj haj");
@@ -52,7 +53,7 @@ public class Main {
 
         System.out.println(liste.printFromTail());
 
- */
+        */
 
     }
 
